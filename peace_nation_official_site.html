@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>布魯克幫和平共和國｜官方網站</title>
+<style>
+:root {
+  --navy: #17365d;
+  --blue: #2459a9;
+  --pale: #eef4fb;
+  --gold: #c5a65a;
+  --ink: #17212f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, "Noto Sans TC", sans-serif;
+  color: var(--ink);
+  background: #f6f8fb;
+  line-height: 1.7;
+}
+header {
+  background: var(--navy);
+  color: white;
+  padding: 28px 18px;
+  text-align: center;
+  border-bottom: 5px solid var(--gold);
+}
+header h1 { margin: 0; }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+nav a {
+  color: var(--navy);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+nav a:hover { background: var(--pale); }
+main { max-width: 1000px; margin: auto; padding: 18px; }
+section {
+  background: white;
+  margin: 16px 0;
+  padding: 20px;
+  border: 1px solid #e0e6ee;
+  border-radius: 14px;
+}
+h2 {
+  color: var(--navy);
+  border-left: 4px solid var(--gold);
+  padding-left: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  background: #f1f4f8;
+  border: 1px dashed #b7c5d7;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+}
+.art img { max-width: 100%; max-height: 260px; }
+.tile {
+  background: var(--pale);
+  padding: 14px;
+  border-radius: 10px;
+  margin: 8px 0;
+}
+button, .button {
+  border: 0;
+  background: var(--blue);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font: inherit;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc9d8;
+  border-radius: 7px;
+  font: inherit;
+  margin: 4px 0 12px;
+}
+label { font-weight: 600; }
+.muted, small { color: #66758a; }
+table { width: 100%; border-collapse: collapse; }
+th, td {
+  padding: 9px;
+  border-bottom: 1px solid #e3e8ef;
+  text-align: left;
+}
+th { background: var(--pale); }
+#passport {
+  border: 3px double var(--gold);
+  padding: 18px;
+  background: #111827;
+  color: #f4df9c;
+  border-radius: 12px;
+  max-width: 500px;
+  margin-top: 12px;
+}
+footer { text-align: center; padding: 25px; color: #66758a; }
+@media print {
+  nav, button, .no-print { display: none !important; }
+  body { background: white; }
+  section { break-inside: avoid; }
+  #passport {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>布魯克幫和平共和國</h1>
+  <p>和平・友善・友好｜TRE</p>
+</header>
+
+<nav>
+  <a href="#about">國家簡介</a>
+  <a href="#news">國家公告</a>
+  <a href="#diplomacy">外交</a>
+  <a href="#currency">貨幣</a>
+  <a href="#apply">加入申請</a>
+  <a href="#links">官方連結</a>
+</nav>
+
+<main>
+<section id="about">
+  <h2>國家簡介</h2>
+  <p>歡迎來到布魯克幫和平共和國。本國以和平、友善與友好為理念，國家代碼為 <b>TRE</b>。</p>
+  <div class="grid">
+    <div>
+      <h3>國旗</h3>
+      <div class="art">
+        <img src="flag.png" alt="和平國國旗"
+        onerror="this.replaceWith(document.createTextNode('請將原始國旗圖片命名為 flag.png，放在 HTML 同一資料夾。'))">
+      </div>
+    </div>
+    <div>
+      <h3>護照封面</h3>
+      <div class="art">
+        <img src="passport.png" alt="和平國護照封面"
+        onerror="this.replaceWith(document.createTextNode('請將原始護照封面命名為 passport.png，放在 HTML 同一資料夾。'))">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="news">
+  <h2>國家公告</h2>
+  <div class="tile">
+    <b>農業部｜薄荷栽培計畫</b>
+    <p>薄荷種子已購入，預計於 2026 年 10 月 11 日播種。</p>
+  </div>
+  <div class="tile">
+    <b>國防部｜閱兵籌備</b>
+    <p>預定 11 月 10 日舉行和平國閱兵活動（虛構國家活動公告）。</p>
+  </div>
+</section>
+
+<section id="diplomacy">
+  <h2>邦交國</h2>
+  <ol>
+    <li>班尼聯合王國</li>
+    <li>索渃夫社會主義聯邦共和國</li>
+    <li>法蘭西貓帝國</li>
+    <li>納威亞特民國</li>
+    <li>美西聯邦共和國</li>
+    <li>中華茗澤國</li>
+    <li>赫利奧斯聖心聯邦共和國</li>
+    <li>史瓦帝尼王國</li>
+    <li>馬來西亞社會主義共和國</li>
+    <li>香菜人民共和國</li>
+    <li>班拉維自由民主共和國</li>
+    <li>台華民主主義共和國</li>
+    <li>酥霍脆克曼聯邦共和國</li>
+  </ol>
+  <p class="muted">以上為和平國設定中的虛構社群邦交名單。</p>
+</section>
+
+<section id="currency">
+  <h2>布魯克幫貨幣 BPC</h2>
+  <table>
+    <tr><th>面額</th><th>約當新臺幣</th></tr>
+    <tr><td>3000 BPC</td><td>NT$ 4,000</td></tr>
+    <tr><td>2000 BPC</td><td>NT$ 3,000</td></tr>
+    <tr><td>200 BPC</td><td>NT$ 300</td></tr>
+    <tr><td>100 BPC</td><td>NT$ 200</td></tr>
+    <tr><td>50 BPC</td><td>NT$ 100</td></tr>
+    <tr><td>10 BPC</td><td>NT$ 50</td></tr>
+  </table>
+  <p>貨幣匯率因每天匯率不同，下面顯示匯率皆為大約數。以上為虛構設定，並非真實可兌換匯率。</p>
+  <b>布魯克幫財政部中央銀行關心您</b>
+</section>
+
+<section id="apply">
+  <h2>和平國加入申請</h2>
+  <p class="muted">
+    申請資料只儲存在目前瀏覽器。這是虛構社群申請，不是法律身分證件；
+    編號也不保證跨裝置唯一。
+  </p>
+
+  <form id="joinForm">
+    <label for="handle">Threads 帳號（必填，最多 50 字）</label>
+    <input id="handle" maxlength="50" required placeholder="@你的帳號">
+
+    <label for="reason">加入原因（最多 20 字）</label>
+    <textarea id="reason" maxlength="20" rows="2"
+      placeholder="想加入和平國的原因"></textarea>
+
+    <label for="epass">是否申請電子護照</label>
+    <select id="epass">
+      <option value="yes">是</option>
+      <option value="no">否</option>
+    </select>
+
+    <label>
+      <input id="consent" type="checkbox" required style="width:auto">
+      我了解這是虛構社群申請，資料僅存於本瀏覽器。
+    </label>
+
+    <p>
+      <button type="submit">送出申請</button>
+      <button type="button" id="clear">清除本機資料</button>
+    </p>
+  </form>
+
+  <div id="result" aria-live="polite"></div>
+
+  <div id="passport" hidden>
+    <h3>布魯克幫和平共和國・電子護照</h3>
+    <p>和平　友善　友好</p>
+    <hr>
+    <p id="pHandle"></p>
+    <p id="pReason"></p>
+    <p id="pDate"></p>
+    <p id="pId"></p>
+    <p>虛構社群電子護照，非官方旅行證件。</p>
+  </div>
+  <p><button type="button" id="print" class="no-print">列印／另存 PDF</button></p>
+</section>
+
+<section id="links">
+  <h2>官方連結</h2>
+  <p>
+    <a class="button" href="https://www.threads.com/@tre202610.9"
+       target="_blank" rel="noopener">和平國 Threads</a>
+  </p>
+  <p>
+   <a href="https://baba401220-crypto.github.io/game3/" target="_blank" rel="noopener noreferrer">
+  你的拉麵店入口
+</a>  </p>
+</section>
+</main>
+
+<footer>
+  布魯克幫和平共和國｜TRE<br>
+  <small>本網站為虛構社群專案，並非真實國家或政府機關。</small>
+</footer>
+
+<script>
+const $ = id => document.getElementById(id);
+
+$('joinForm').addEventListener('submit', e => {
+  e.preventDefault();
+
+  const nextId = Number(localStorage.getItem('treNextId') || 2);
+  const data = {
+    handle: $('handle').value.trim(),
+    reason: $('reason').value.trim(),
+    epass: $('epass').value,
+    date: new Date().toLocaleDateString('zh-TW'),
+    id: 'TRE-' + String(nextId).padStart(4, '0')
+  };
+
+  localStorage.setItem('treApplication', JSON.stringify(data));
+  localStorage.setItem('treNextId', String(nextId + 1));
+  $('result').textContent =
+    '申請資料已儲存於這台裝置的瀏覽器。編號：' + data.id;
+
+  if (data.epass === 'yes') {
+    $('passport').hidden = false;
+    $('pHandle').textContent = 'Threads：' + data.handle;
+    $('pReason').textContent = '加入原因：' + (data.reason || '未填寫');
+    $('pDate').textContent = '核發日期：' + data.date;
+    $('pId').textContent = '社群編號：' + data.id;
+  } else {
+    $('passport').hidden = true;
+  }
+});
+
+$('clear').addEventListener('click', () => {
+  if (confirm('確定清除本機保存的申請資料與編號計數？')) {
+    localStorage.removeItem('treApplication');
+    localStorage.removeItem('treNextId');
+    $('result').textContent = '本機資料已清除。';
+    $('passport').hidden = true;
+  }
+});
+
+$('print').addEventListener('click', () => window.print());
+
+try {
+  const data = JSON.parse(localStorage.getItem('treApplication') || 'null');
+  if (data) {
+    $('handle').value = data.handle;
+    $('reason').value = data.reason;
+    $('epass').value = data.epass;
+    $('result').textContent = '已載入本機保存的申請資料，編號：' + data.id;
+
+    if (data.epass === 'yes') {
+      $('passport').hidden = false;
+      $('pHandle').textContent = 'Threads：' + data.handle;
+      $('pReason').textContent = '加入原因：' + (data.reason || '未填寫');
+      $('pDate').textContent = '核發日期：' + data.date;
+      $('pId').textContent = '社群編號：' + data.id;
+    }
+  }
+} catch (e) {}
+</script>
+</body>
+</html>
